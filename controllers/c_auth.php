@@ -14,11 +14,11 @@ else header("Location:../views/user/index.php");
 
 if($_GET['aksi']=='register'){
 $a->register($_POST);
-header("Location:../views/index.php");
+header("Location:../index.php");
 }
 
 if($_GET['aksi']=='logout'){
 session_destroy();
-header("Location:../views/index.php");
+header("Location:../index.php");
 }
 ?>

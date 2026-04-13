@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Login</title>
@@ -12,11 +13,11 @@
     <div class="card shadow p-4" style="width: 350px;">
         <h3 class="text-center mb-3">Login</h3>
 
-        <form method="POST" action="../controllers/c_auth.php?aksi=login">
+        <form method="POST" action="/perpustakaan_digital_haerul/controllers/c_auth.php?aksi=login">
             
             <div class="mb-3">
                 <label class="form-label">Email</label>
-                <input class="form-control" name="email" placeholder="Masukkan email" required>
+                <input class="form-control" type="email" name="email" placeholder="Masukkan email" required>
             </div>
 
             <div class="mb-3">
@@ -24,11 +25,11 @@
                 <input class="form-control" type="password" name="password" placeholder="Masukkan password" required>
             </div>
 
-            <button class="btn btn-primary w-100">Login</button>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>
 
         <div class="text-center mt-3">
-            <small>Belum punya akun? <a href="register.php">Daftar</a></small>
+            <small>Belum punya akun? <a href="registrasi.php">Daftar</a></small>
         </div>
     </div>
 
